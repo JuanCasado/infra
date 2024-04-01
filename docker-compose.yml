@@ -1,0 +1,56 @@
+version: "3.8"
+services:
+  golang:
+    image: jcb/dev/golang:latest
+    privileged: true
+    hostname: golang
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/home/dev/code/infra
+    ports:
+      - "1022:22"
+
+  rust:
+    image: jcb/dev/rust:latest
+    privileged: true
+    hostname: rust
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/home/dev/code/infra
+    ports:
+      - "2022:22"
+
+  python:
+    image: jcb/dev/python:latest
+    privileged: true
+    hostname: python
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/home/dev/code/infra
+    ports:
+      - "3022:22"
+
+  node:
+    image: jcb/dev/node:latest
+    privileged: true
+    hostname: node
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/home/dev/code/infra
+    ports:
+      - "4022:22"
+
+  gcc:
+    image: jcb/dev/gcc:latest
+    privileged: true
+    hostname: gcc
+    stdin_open: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/home/dev/code/infra
+    ports:
+      - "5022:22"

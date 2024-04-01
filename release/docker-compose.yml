@@ -1,0 +1,90 @@
+version: "3.8"
+services:
+################################################
+# GOLANG
+################################################
+  golang:
+    image: jcb/release/golang:latest
+    extends: golang.1.22
+
+  golang.1.22:
+    image: jcb/release/golang:1.22
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: golang
+        version: 1.22
+
+  golang.1.21:
+    image: jcb/release/golang:1.21
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: golang
+        version: 1.21
+
+################################################
+# RUST
+################################################
+  rust:
+    image: jcb/release/rust:latest
+    extends: rust.1.74
+
+  rust.1.74:
+    image: jcb/release/rust:1.74
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: rust
+        version: 1.74
+
+################################################
+# NODE
+################################################
+  node:
+    image: jcb/release/node:latest
+    extends: node.21.7
+
+  node.21.7:
+    image: jcb/release/node:21.7
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: node
+        version: 21.7
+
+################################################
+# PYTHON
+################################################
+  python:
+    image: jcb/release/python:latest
+    extends: python.3.12
+
+  python.3.12:
+    image: jcb/release/python:3.12
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: python
+        version: 3.12
+
+################################################
+# C++
+################################################
+  gcc:
+    image: jcb/release/gcc:latest
+    extends: gcc.13.2
+
+  gcc.13.2:
+    image: jcb/release/gcc:13.2
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        image: gcc
+        version: 13.2
