@@ -5,3 +5,4 @@
 /setup/configure/zsh.sh
 /setup/configure/bash.sh
 /setup/configure/home.sh
+/setup/configure/git.sh
