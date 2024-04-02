@@ -7,6 +7,7 @@ services:
     stdin_open: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh/github:/home/dev/.ssh/github
       - .:/home/dev/code/infra
     ports:
       - "1022:22"
@@ -18,6 +19,7 @@ services:
     stdin_open: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh/github:/home/dev/.ssh/github
       - .:/home/dev/code/infra
     ports:
       - "2022:22"
@@ -29,6 +31,7 @@ services:
     stdin_open: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh/github:/home/dev/.ssh/github
       - .:/home/dev/code/infra
     ports:
       - "3022:22"
@@ -40,6 +43,7 @@ services:
     stdin_open: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh/github:/home/dev/.ssh/github
       - .:/home/dev/code/infra
     ports:
       - "4022:22"
@@ -51,6 +55,7 @@ services:
     stdin_open: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh/github:/home/dev/.ssh/github
       - .:/home/dev/code/infra
     ports:
       - "5022:22"
