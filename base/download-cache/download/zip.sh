@@ -1,3 +1,3 @@
 #!/bin/sh -xe
 
-apt-get install -dy zip > /dev/null
+apt-get install -dy unzip zip > /dev/null

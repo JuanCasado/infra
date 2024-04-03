@@ -98,6 +98,12 @@ services:
       context: download-cache
       dockerfile: Dockerfile
 
+  haskell-cache:
+    image: jcb/base/haskell-cache:latest
+    build:
+      context: haskell-cache
+      dockerfile: Dockerfile
+
   docker:
     image: jcb/base/docker:latest
     build:

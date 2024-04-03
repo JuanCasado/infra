@@ -35,6 +35,7 @@ apt install --reinstall software-properties-common >/dev/null
 /setup/install/chroma.sh
 /setup/install/jq.sh
 /setup/install/fzf.sh
+/setup/install/fd.sh
 /setup/install/icdiff.sh
 /setup/install/colordiff.sh
 /setup/install/dyff.sh

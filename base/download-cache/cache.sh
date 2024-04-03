@@ -19,7 +19,7 @@ apt-get update >/dev/null
 apt-get install -y apt-utils gpg-agent python3-launchpadlib >/dev/null
 apt install --reinstall software-properties-common >/dev/null
 
-apt-get install -y wget curl >/dev/null
+apt-get install -y unzip wget curl >/dev/null
 
 /download/autojump.sh
 /download/bat.sh
