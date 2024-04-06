@@ -16,7 +16,7 @@ EOF
 
 export DEBIAN_FRONTEND="noninteractive"
 apt-get update >/dev/null
-apt-get install -y apt-utils gpg-agent python3-launchpadlib >/dev/null
+apt-get install -y apt-utils gpg-agent python3-launchpadlib locales-all >/dev/null
 apt install --reinstall software-properties-common >/dev/null
 
 apt-get install -y unzip wget curl >/dev/null
@@ -47,5 +47,6 @@ apt-get install -y unzip wget curl >/dev/null
 /download/ssl.sh
 /download/tmux.sh
 /download/tree.sh
+/download/eza.sh
 /download/wget.sh
 /download/zsh.sh

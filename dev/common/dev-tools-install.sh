@@ -16,7 +16,7 @@ EOF
 
 export DEBIAN_FRONTEND="noninteractive"
 apt-get update >/dev/null
-apt-get install -y apt-utils gpg-agent python3-launchpadlib >/dev/null
+apt-get install -y apt-utils gpg-agent python3-launchpadlib locales-all >/dev/null
 apt install --reinstall software-properties-common >/dev/null
 
 /setup/install/man.sh
@@ -36,6 +36,10 @@ apt install --reinstall software-properties-common >/dev/null
 /setup/install/jq.sh
 /setup/install/fzf.sh
 /setup/install/fd.sh
+/setup/install/percol.sh
+/setup/install/pre-commit.sh
+/setup/install/thefuck.sh
+/setup/install/zoxide.sh
 /setup/install/icdiff.sh
 /setup/install/colordiff.sh
 /setup/install/dyff.sh
@@ -44,6 +48,7 @@ apt install --reinstall software-properties-common >/dev/null
 /setup/install/htop.sh
 /setup/install/ripgrep.sh
 /setup/install/bitwise.sh
+/setup/install/eza.sh
 /setup/install/tmux.sh
 /setup/install/zsh.sh
 /setup/install/nvim.sh
