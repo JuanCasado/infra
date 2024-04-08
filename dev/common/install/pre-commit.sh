@@ -1,3 +1,3 @@
 #!/bin/sh -xe
 
-pip3 install pre-commit
+pip3 install --break-system-package pre-commit

@@ -16,7 +16,7 @@ EOF
 
 export DEBIAN_FRONTEND="noninteractive"
 apt-get update >/dev/null
-apt-get install -y apt-utils gpg-agent python3-launchpadlib locales-all >/dev/null
+apt-get install -y apt-utils gpg-agent python3-launchpadlib locales locales-all >/dev/null
 apt install --reinstall software-properties-common >/dev/null
 
 apt-get install -y unzip wget curl >/dev/null

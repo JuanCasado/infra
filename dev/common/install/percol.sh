@@ -1,3 +1,3 @@
 #!/bin/sh -xe
 
-pip3 install percol
+pip3 install --break-system-packages percol
