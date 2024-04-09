@@ -5,6 +5,7 @@ su $DEV_USER sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyz
 ln -fs /home/$DEV_USER/.config/zsh /home/$DEV_USER/.zshrc
 ln -fs /home/$DEV_USER/.config/p10k.zsh /home/$DEV_USER/.p10k.zsh
 ln -fs /home/$DEV_USER/.config/tmux /home/$DEV_USER/.tmux.conf
+ln -fs /home/$DEV_USER/.config/tmux.local /home/$DEV_USER/.tmux.conf.local
 
 git clone https://github.com/zsh-users/zsh-history-substring-search.git /home/$DEV_USER/.oh-my-zsh/custom/plugins/zsh-history-substring-search
 git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git /home/$DEV_USER/.oh-my-zsh/custom/plugins/zsh-autocomplete
