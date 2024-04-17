@@ -43,6 +43,7 @@ apt-get install -y unzip wget curl >/dev/null
 /download/openssh.sh
 /download/pandoc.sh
 /download/ping.sh
+/download/pyenv.sh
 /download/ripgrep.sh
 /download/ssl.sh
 /download/tmux.sh

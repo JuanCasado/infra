@@ -27,6 +27,7 @@ apt install --reinstall software-properties-common >/dev/null
 /setup/install/wget.sh
 /setup/install/httpie.sh
 /setup/install/ping.sh
+/setup/install/pyenv.sh
 /setup/install/openssh.sh
 /setup/install/gh.sh
 /setup/install/less.sh
